@@ -1,10 +1,9 @@
 {
-  "name": "wombat",
+  "name": "wombat-fixed",
   "theme": "syntax",
-  "version": "1.0.4",
-  "private": true,
+  "version": "1.0",
   "description": "Wombat Atom syntax theme.",
-  "repository": "https://github.com/mustafar/wombat",
+  "repository": "https://github.com/acrogenesis/wombat",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
