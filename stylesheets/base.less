@@ -1,43 +1,43 @@
 @import "syntax-variables";
 
-.editor {
+:host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-.editor .gutter {
+:host .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
   z-index: 10;
 }
 
-.editor .gutter .line-number.cursor-line {
+:host .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-.editor .gutter .line-number.cursor-line-no-selection {
+:host .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-.editor .search-results .marker .region {
+:host .search-results .marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-.editor .search-results .marker.current-result .region {
+:host .search-results .marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-.editor.is-focused .cursor {
+:host(.is-focused) .cursor {
   border-color: @syntax-cursor-color;
 }
 
-.editor.is-focused .selection .region {
+:host(.is-focused) .selection .region {
   background-color: @syntax-selection-color;
 }
 
-.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+:host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
   background-color: #2D2D2D;
   z-index: -10;
 }
